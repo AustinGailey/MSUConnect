@@ -39,6 +39,7 @@ import android.support.annotation.RawRes
 import android.util.Log
 import android.webkit.WebSettings
 import android.webkit.WebView
+import android.widget.LinearLayout
 import android.widget.Toast
 import com.google.android.gms.common.api.ResolvableApiException
 import com.google.android.gms.location.*
@@ -48,7 +49,6 @@ import com.google.android.gms.tasks.Tasks
 import cs.msuconnectandroid.R.id.drawer_layout
 import cs.msuconnectandroid.MSUConnectObjects.*
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.app_bar_main.*
 import java.util.*
 import com.google.firebase.firestore.GeoPoint
 
@@ -174,16 +174,19 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback, GoogleMap.OnInfoWi
         // Handle navigation view item clicks here.
         when (item.itemId) {
             R.id.main_DrawerNav_Map -> {
-                var mapsFragment = BlankFragment()
-                supportFragmentManager
-                        .beginTransaction()
-                        .replace(R.id.fragment, mapsFragment)
-                        .commitNow()
+//                var mapsFragment = BlankFragment()
+//                supportFragmentManager
+//                        .beginTransaction()
+//                        .replace(R.id.fragment, mapsFragment)
+//                        .commitNow()
 //                if(supportFragmentManager.findFragmentById(R.id.map)==null)Log.d("MRB", "No Map")
 //                else Log.d("MRB", "Found map")
             }
             R.id.main_DrawerNav_Profile -> {
                 // TODO:
+                // and LinearLayout to toggle
+                var propLayout: LinearLayout = findViewById(R.id.profile_view)
+
 //                supportFragmentManager
 //                        .beginTransaction()
 //                        .replace(R.id.content_main, Profile())
