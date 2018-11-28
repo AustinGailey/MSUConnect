@@ -55,9 +55,11 @@ class MapsFragment : SupportMapFragment(), OnMapReadyCallback {
                     if(p0 != null)
                     {
                         var eventID = p0.tag as Int
-                        if(eventID > 0)
-                            openURL(eventID.toString())
-                } }
+                        if(eventID > 0) {
+                            var eventURL = getURL(eventID.toString())
+                        }
+                    }
+                }
             }
         }
         setUpMap()
@@ -80,10 +82,8 @@ class MapsFragment : SupportMapFragment(), OnMapReadyCallback {
         }
     }
 
-    fun openURL(url : String)
-    {
-        val browserIntent = Intent(Intent.ACTION_VIEW, Uri.parse("https://msudenver.edu/events/?trumbaEmbed=view%3Devent%26eventid%3D$url"))
-        startActivity(browserIntent)
+    fun getURL(url : String): String {
+        return "https://msudenver.edu/events/?trumbaEmbed=view%3Devent%26eventid%3D$url"
     }
 
     fun readRaw(@RawRes resourceId: Int): String {

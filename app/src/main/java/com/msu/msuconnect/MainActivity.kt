@@ -90,7 +90,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-
     public override fun onStart() {
         super.onStart()
     }
