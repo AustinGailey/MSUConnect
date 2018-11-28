@@ -48,7 +48,7 @@
     <string name="token_null">Token: null</string>
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
-    <string name="desc_firebase_lockup">Firebase logo and name</string>
+    <string name="desc_MSU_lockup">MSU logo and name</string>
     <string name="auth_failed">Authentication failed</string>
     <string name="start_phone_auth">Start</string>
     <string name="verify_phone_auth">Verify</string>
