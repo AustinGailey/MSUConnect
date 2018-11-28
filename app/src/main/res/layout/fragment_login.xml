@@ -21,8 +21,8 @@
                 style="@style/ThemeOverlay.FirebaseIcon"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/desc_firebase_lockup"
-                android:src="@drawable/firebase_lockup_400" />
+                android:contentDescription="@string/desc_MSU_lockup"
+                android:src="@drawable/MSU_Denver_Roadrunners" />
 
         <TextView
                 android:id="@+id/titleText"
