@@ -22,7 +22,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/desc_MSU_lockup"
-                android:src="@drawable/MSU_Denver_Roadrunners" />
+                android:src="@drawable/msu_denver_roadrunners" />
 
         <TextView
                 android:id="@+id/titleText"
