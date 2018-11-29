@@ -51,7 +51,7 @@ class LoginFragment : Fragment(), View.OnClickListener {
                 } else {
                     // If sign in fails, display a message to the user.
                     Toast.makeText(
-                        this.context, "Authentication failed.",
+                        this.context, "Please enter a valid email and password. Password must include A-z and 0-9",
                         Toast.LENGTH_SHORT
                     ).show()
                     updateUI(null)
